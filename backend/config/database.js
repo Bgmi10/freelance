@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDatabase = () => {
   mongoose
-    .connect(process.env.DB_URI, {
+    .connect("mongodb://0.0.0.0:27017/nexus", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
