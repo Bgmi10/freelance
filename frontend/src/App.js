@@ -1,4 +1,6 @@
 import "./App.css";
+import './input.css'
+import Inhouse  from "./component/Other/Inhouse.js";
 import { useEffect, useState } from "react";
 //import Header from "./component/layout/Header/Header.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -55,12 +57,14 @@ function App() {
     store.dispatch(loadUser());
   }, []);
 
-  window.addEventListener("contextmenu", (e) => e.preventDefault());
+ // window.addEventListener("contextmenu", (e) => e.preventDefault());
+
+ const loginpath = window.location.pathname === '/login'
+
+
 
   return (
     <Router>
-
-      {isAuthenticated && <UserOptions user={user} />}
 
 <Header/>
 
@@ -94,6 +98,7 @@ function App() {
         <Route exact path="/password/reset/:token" component={ResetPassword} />
 
         <Route exact path="/login" component={LoginSignUp} />
+        <Route exact path="/In-house" component={Inhouse} />
 
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/book" component={Book} />
@@ -167,7 +172,7 @@ function App() {
           }
         />
       </Switch>
-      <Footer />
+      { !loginpath ? <Footer /> : null}
 
     </Router>
   );

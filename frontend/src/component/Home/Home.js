@@ -1,8 +1,10 @@
 import React, { Fragment, useEffect, useState, useRef } from "react";
-import { CgMouse, DiCelluloid } from "react-icons/all";
+import { CgMouse } from "react-icons/cg";
+import { DiCelluloid } from "react-icons/di";
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData";
+import { FaHome } from 'react-icons/fa';
 import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
@@ -103,7 +105,7 @@ const Home = ({ history }) => {
           <div className="main">
 
             <ScrollAnimation animateIn="fadeIn">
-              <div className="box">
+              <div className="box ll">
                 <div className="group">
                   <p className="providing-high">
                     Securing Data

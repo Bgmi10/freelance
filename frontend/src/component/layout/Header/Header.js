@@ -2,17 +2,17 @@ import styled from "styled-components";
 import logo from "../../../images/logo.png";
 import DropdownMenu from "./DropdownMenu";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faClock, faClose } from "@fortawesome/free-solid-svg-icons";
+
 
 const Header = (props) => {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  
+  const [ismenuopen , setismenuopen] = useState(false)
 
-  const handleMouseEnter = () => {
-    setDropdownVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setDropdownVisible(false);
-  };
+  const handlelogin = () =>{
+    setismenuopen(!ismenuopen)
+  }
   return (
     <Container className="contin">
       <Logo>
@@ -33,16 +33,25 @@ const Header = (props) => {
         <div class="dropdown">
           <button class="dropbtn"><span>Courses</span></button>
           <div class="dropdown-content">
-            <a href="#">In-house</a>
-            <a href="#">Collab</a>
-            <a href="#">Udemy</a>
+            <a href="/In-house">In-house</a>
+            <a href="/collab">Collab</a>
+            <a href="/udemy">Udemy</a>
           </div>
         </div>
         <a href="/other">
           <span>Other Services</span>
         </a>
       </NavMenu>
-      <Login className="h-login" href="/login">Login</Login>
+     
+      <Login className="h-login"href="/login" >
+        Login
+        
+         </Login>
+         
+        
+         
+            <DropdownMenu />
+        
     </Container>
   );
 };

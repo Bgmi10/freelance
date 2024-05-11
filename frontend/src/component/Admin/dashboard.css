@@ -3,8 +3,9 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  position: absolute;
+  margin-top: 150px;
 }
+
 
 .dashboardContainer {
   border-left: 1px solid rgba(0, 0, 0, 0.13);
@@ -16,9 +17,10 @@
   color: rgba(0, 0, 0, 0.733);
   font: 300 2rem "Roboto";
   text-align: center;
-  width: 50%;
-  padding: 1.5rem;
+  width: 40%;
+  padding: 1rem;
   margin: auto;
+  font-size: 20px;
 }
 
 .dashboardSummary {

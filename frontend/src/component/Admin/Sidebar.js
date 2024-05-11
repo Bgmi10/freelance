@@ -1,6 +1,5 @@
 import React from "react";
 import "./sidebar.css";
-import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 import { TreeView, TreeItem } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -15,20 +14,19 @@ import RateReviewIcon from "@material-ui/icons/RateReview";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <Link to="/">
-        <img src={logo} alt="Ecommerce" />
-      </Link>
-      <Link to="/admin/dashboard">
-        <p>
-          <DashboardIcon /> Employees
-        </p>
-      </Link>
       <Link to="/admin/tasks">
         <p>
           <ListAltIcon />
           Tasks
         </p>
       </Link>
+      <Link to="/admin/employees">
+        <p>
+          <PeopleIcon />
+          Employees
+        </p>
+      </Link>
+      
     </div>
   );
 };

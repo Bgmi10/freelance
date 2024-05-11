@@ -47,7 +47,10 @@ body {
 .mn2{
   height: 60vh;
 }
-
+.ll{
+  display: flex;
+  flex-wrap: none;
+}
 .img1{
   display: flex;
   align-items: center;
