@@ -1,7 +1,8 @@
 .speedDial {
-  position: fixed;
+
   right: 3vmax;
   top: 3vmax;
+  
 }
 
 .speedDialIcon {
@@ -26,6 +27,27 @@
     color: #000;
     border-color: transparent;
   }
+}
+@media (max-width: 767px) {
+ .h-login {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 16px;
+    margin-right: -40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: #00bbffc9;
+      color: #000;
+      border-color: transparent;
+    }
+  }
+  
+
 }
 
 .contin {

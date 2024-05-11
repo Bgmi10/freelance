@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState, useRef } from "react";
-import { CgMouse, DiCelluloid } from "react-icons/all";
 import "../Home/Home.css";
 import MetaData from "../layout/MetaData";
 import { clearErrors, getProduct } from "../../actions/productAction";
