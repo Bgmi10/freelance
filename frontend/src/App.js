@@ -46,6 +46,7 @@ import Book from "./component/layout/bookmeeting.js";
 import Other from "./component/Other/Other.js";
 import TC from "./component/Other/TC.js";
 import CyberSecurity from "./component/Other/CyberSecurity.js";
+import { Fs } from "./component/courses/Fs.js";
 
 
 function App() {
@@ -98,9 +99,11 @@ function App() {
         <Route exact path="/password/forgot" component={ForgotPassword} />
 
         <Route exact path="/password/reset/:token" component={ResetPassword} />
+     
 
         <Route exact path="/login" component={LoginSignUp} />
         <Route exact path="/In-house" component={Inhouse} />
+        <Route exact path="/course/fullstack" component={Fs} />
 
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/book" component={Book} />
