@@ -1,12 +1,6 @@
 .LoginSignUpContainer {
-<<<<<<< HEAD
-
-  width: 100%;
-  height: 100%;
-=======
   width: 100vh;
   height: 100vh;
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -15,20 +9,14 @@
   position: fixed;
   top: 0%;
   left: 0;
-<<<<<<< HEAD
-=======
   height: 100vh;
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
   background-image:
   linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), /* Gradient from bottom to top */
   url('../../images/mask.png');/* Set the background image */
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
-<<<<<<< HEAD
-=======
   margin-left: 350px;
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
   
 
  /* Prevent the image from repeating */
@@ -38,10 +26,6 @@
 
 
 .LoginSignUpBox {
-<<<<<<< HEAD
-  margin-top: 150px;
-=======
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
   width: 25vw;
   height: 70vh;

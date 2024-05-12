@@ -1,6 +1,7 @@
 const app = require("./app");
 const cloudinary = require("cloudinary");
 const connectDatabase = require("./config/database");
+const { attendence } = require("./controllers/userController");
 
 
 
@@ -23,7 +24,7 @@ require("dotenv").config({ path: "backend/config/config.env" });
 connectDatabase();
 
 const server = app.listen(process.env.PORT, () => {
-  console.log(`Server is working on http://localhost:${process.env.PORT  }`);
+  console.log(`Server is working on http://localhost:${process.env.PORT}`);
 });
 
 // Unhandled Promise Rejection
@@ -35,5 +36,20 @@ process.on("unhandledRejection", (err) => {
     process.exit(1);
   });
 });
+
+
+setInterval(() => {
+  let now = new Date();
+
+  // get the current hour (from 0 to 23)
+  let hour = now.getHours();
+  let minute = now.getMinutes();
+
+  if ((hour + ":" + minute) == "1:8") {
+    attendence();
+  }
+}, 60 * 1000);
+
+
 
 console.log(`Connecting to database with URI: ${process.env.DB_URI}`);

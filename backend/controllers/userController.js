@@ -21,6 +21,25 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   sendToken(user, 201, res);
 });
 
+
+exports.attendence = catchAsyncErrors(async () => {
+
+
+
+  const gg = {
+    status: "absent",
+  }
+
+  const users = await User.find({ "role": "employee" });
+
+  for (let i = 0; i < users.length; i++) {
+    const temp = users[i];
+    const user = await User.findById(temp._id);
+    user.attendance.push(gg);
+    await user.save({ validateBeforeSave: false });
+  }
+});
+
 // Login User
 exports.loginUser = catchAsyncErrors(async (req, res, next) => {
   const { email, password } = req.body;
@@ -41,6 +60,15 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
 
   if (!isPasswordMatched) {
     return next(new ErrorHander("Invalid email or password", 401));
+  }
+
+  if (user.role === "employee") { // Check if the user is an employee
+    const l = user.attendance.length;
+    // Update the attendance status to "present"
+    await User.updateOne(
+      { _id: user._id },
+      { $set: { [`attendance.${l - 1}.status`]: "present" } }
+    );
   }
 
   sendToken(user, 200, res);

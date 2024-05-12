@@ -101,10 +101,6 @@ function App() {
 
         <Route exact path="/login" component={LoginSignUp} />
         <Route exact path="/In-house" component={Inhouse} />
-<<<<<<< HEAD
-=======
-        <Route exact path="/course/fullstack" component={Fs} />
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
 
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/book" component={Book} />

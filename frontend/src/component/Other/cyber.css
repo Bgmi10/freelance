@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .boxr {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of elements */
@@ -481,7 +480,6 @@ top: 10px;
   .flex-item {
     margin-bottom: 20px;
   }
-=======
 .box {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of elements */
@@ -538,7 +536,7 @@ top: 10px;
   .zero {
     width: 30%;
   }
-  
+}
  
   
   
@@ -964,5 +962,4 @@ top: 10px;
   .flex-item {
     margin-bottom: 20px;
   }
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
 }

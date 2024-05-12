@@ -36,6 +36,10 @@ const userSchema = new mongoose.Schema({
         default: "absent",
         required: true,
       },
+      date:{
+        type: Date,
+        default: Date.now()
+      }
     },
   ],
   role: {

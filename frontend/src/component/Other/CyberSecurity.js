@@ -163,11 +163,7 @@ const CyberSecurity = ({ history }) => {
                     <div className="main">
                           
                         <ScrollAnimation animateIn="fadeIn">
-<<<<<<< HEAD
                             <div className="boxr">
-=======
-                            <div className="box">
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
                                 <div className="group" style={{ width: "100%" }}>
                                     <p className="providing-high">
                                         Ethical Hacking
@@ -185,15 +181,11 @@ const CyberSecurity = ({ history }) => {
 
                                 </div>
                                 
-<<<<<<< HEAD
                                 <div className="img4">
-=======
-                                <div className="img1">
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
                                     <img src={ch1} className="gradient-overlay" style={{ width: '80%', height: 'auto', borderRadius:
                                 '6px' }} />
                                 </div>
-                            </div>
+                                </div>
                         </ScrollAnimation>
 
 

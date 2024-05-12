@@ -170,20 +170,6 @@ const LoginSignUp = ({ history, location }) => {
                     className="email-1"
                     onChange={registerDataChange}
 
-<<<<<<< HEAD
-                  />
-                </div>
-                <div className="signUpEmail">
-                  <input
-                    type="phone"
-                    placeholder="Phone No."
-                    required
-                    name="phone"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-
-=======
->>>>>>> 95411bfc5e19854ea08525c879f58ec483a10af5
                   />
                 </div>
                 <div className="signUpPassword">
