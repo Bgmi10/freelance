@@ -17,7 +17,7 @@ const Header = (props) => {
     <Container className="contin">
       <Logo>
         <a href="/">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" style={{height:"3 0%" , width:"30%" , marginBottom:"100px"}} />
         </a>
       </Logo>
       <NavMenu>
@@ -25,7 +25,7 @@ const Header = (props) => {
       &nbsp;
       &nbsp;
         <a href="/">
-          <span>Home</span>
+          <span style={{marginBottom:"80px", marginRight:""}}>Home</span>
         </a>
         <a href="/vapt">
           <span>VAPT</span>

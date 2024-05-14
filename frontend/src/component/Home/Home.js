@@ -104,32 +104,33 @@ const Home = ({ history }) => {
 
           <div className="main">
 
-            <ScrollAnimation animateIn="fadeIn">
-              <div className="box ll">
-                <div className="group">
-                  <p className="providing-high">
-                    Securing Data
-                  </p >
-                  <p className="providing-high">
-                    and Systems
-                  </p>
+            <ScrollAnimation animateIn="fadeIn ">
+            <div className="box">
+  <div className="">
+    <p className="providing-high" style={{ marginTop: '200px' }}>
+      Securing Data
+    </p>
+    <p className="providing-high">
+      and Systems
+    </p>
 
-                  <p className="white">
-                    Guarding your digital fortress with Nexus cybersecurity solutions and expertise.
-                  </p>
-                  <div className="top-button">
-                    <Button variant="contained">Know More</Button>
-                    <Button variant="contained">Get In Touch</Button>
-                  </div>
+    <p className="white">
+      Guarding your digital fortress with Nexus cybersecurity solutions and expertise.
+    </p>
+    <div className="top-button">
+      <Button variant="contained">Know More</Button>
+      <Button variant="contained">Get In Touch</Button>
+    </div>
+  </div>
+  <div className="img1">
+    <img src={ch1} />
+  </div>
+</div>
 
-                </div>
-                <div className="img1">
-                  <img src={ch1} />
-                </div>
-              </div>
+
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
-              <div className="why">
+               <div className="w-1/2">
 
                 <div className="heading">
                   <h2 className="white-why"> Why</h2>
@@ -165,7 +166,7 @@ const Home = ({ history }) => {
               </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
-              <div className="services">
+            <div class="w-1/2">
                 <h2 className="color-why">Our Services</h2>
                 <div className="ddcards">
                   <div className="card">
@@ -207,16 +208,19 @@ const Home = ({ history }) => {
               </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
-              <div className="founder">
-                <div className="img-fo">
-                  <img src={founder} />
-                </div>
-                <div className="about-fo">
-                  <p>
-                    Meet Armaan Sidana, a trailblazing cybersecurity leader whose prowess in penetration testing has safeguarded over 200 companies. With a stellar record, he's empowered 30,000+ students through his expert guidance. Armaan's mastery extends to hard-hitting certifications like OSCP, CEH, and ISA, specializing in web app security and risk mitigation, making him a beacon of excellence in the industry
-                  </p>
-                </div>
-              </div>
+           <div class="w-1/2">
+  <div class="flex">
+    <div class="img-fo">
+      <img src={founder} />
+    </div>
+    <div class="about-fo">
+      <p className="">
+        Meet Armaan Sidana, a trailblazing cybersecurity leader whose prowess in penetration testing has safeguarded over 200 companies. With a stellar record, he's empowered 30,000+ students through his expert guidance. Armaan's mastery extends to hard-hitting certifications like OSCP, CEH, and ISA, specializing in web app security and risk mitigation, making him a beacon of excellence in the industry
+      </p>
+    </div>
+  </div>
+</div>
+
             </ScrollAnimation>
             <div className="rest">
               <ScrollAnimation animateIn="fadeIn">
